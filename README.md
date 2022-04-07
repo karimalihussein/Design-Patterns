@@ -24,3 +24,34 @@ polymorphism means many forms.
 
 
 ----------------------------------------------------------------
+
+Abstraction
+Abstraction solves the issues at the
+design level.
+
+Abstraction is about hiding unwanted
+details while showing most essential
+information.
+
+Abstraction allows focussing on what
+the information object must contain
+
+Encapsulation
+Encabsulation solves it implementation
+level.
+
+Encapsulation means binding the code
+and data into a single unit.
+
+Encapsulation means hiding the internal
+details or mechanics of how an object
+does something for security reasons.
+
+
+--------------
+Client [
+    - Connect 
+    - Call
+    - exec
+    - terminate
+]
