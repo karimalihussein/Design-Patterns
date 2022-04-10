@@ -77,3 +77,20 @@ the owner is destroyed.
 relationship. It represent an owner object that own another object as part
 of it. This type of relationship controls the life cycle of the owned object in a
 way that if the owner is destroyed then the owned object is destroyed too.
+
+Design Patterns: Creational Design Patterns
+
+In software engineering, creational design pattems are design patterns that
+deal with object creation mechanisms, trying to create objects in a manner
+suitable to the situation. Creational design patterns are composed of two
+dominant ideas. One is encapsulating knowledge about which concrete
+classes the system uses. Another is hiding how instances of these concrete
+classes are created and combined.
+
+
+Factory Method Design Pattern
+- Intention: Define an interface for creating an object, but let subclasses
+ decide which class to instantiate. Factory Method lets a class defer
+ instantiation to subclasses.
+- Also known as: Virtual Constructor
+- Example: Dialog, Content validator
