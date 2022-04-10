@@ -58,3 +58,22 @@ Client [
 
 ----------
 polymorphism
+
+
+-----------
+
+OOP relationships
+
+1 - Association defines a relationship between classes of objects that allows
+one object instance to cause another to perform an action on its behalf.
+
+
+2 - Aggregation is a weak type of association that represents the relationship
+between an owner (whole) object and its aggregated (parts) collection of
+objects in a way that does not affect the life cycle of the parts objects if
+the owner is destroyed.
+
+3 - Composition is a strong type of association and its also called death
+relationship. It represent an owner object that own another object as part
+of it. This type of relationship controls the life cycle of the owned object in a
+way that if the owner is destroyed then the owned object is destroyed too.
