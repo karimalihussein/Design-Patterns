@@ -11,6 +11,9 @@ use App\OOP\Relationship\Patterns\Creational\Builder\Builders\ComputerXLBuilder;
 use App\OOP\Relationship\Patterns\Creational\Builder\Director;
 
 
+$director = new Director(new ComputerCSBuilder());
+$computer = $director->makeComputer();
+var_dump($computer);
 $director = new Director(new ComputerXLBuilder());
 $computer = $director->makeComputer();
 var_dump($computer);

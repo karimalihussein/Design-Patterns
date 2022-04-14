@@ -43,7 +43,7 @@ class ComputerXLBuilder extends Builder
         $networkCard = new NetworkCard(5);
         $disk = new Disk('SSD');
         return new MotherBoard($cpu, $ram, $gpu, $sockets, $networkCard, $disk);
-        // return new MotherBoard();
+       
     }
 
     protected function buildKeyboard(): keyboard
@@ -61,7 +61,7 @@ class ComputerXLBuilder extends Builder
         return new Monitor('1920 FHD');
     }
 
-    protected function buildCoolingSystem(): CoolingSystem
+    protected function buildCollingSystem(): CoolingSystem
     {
         return new CoolingSystem(5);
     }
