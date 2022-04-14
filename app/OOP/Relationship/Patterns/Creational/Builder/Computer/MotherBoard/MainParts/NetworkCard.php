@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
 
 
 class NetworkCard

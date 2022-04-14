@@ -1,8 +1,8 @@
 <?php
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types;
 
 interface ICoolingSystem
 {
-    public function CoolDown(int $temp): bool;
+    public function coolDown(int $temp): bool;
 }

@@ -1,14 +1,14 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
 
 class MotherBoard
 {

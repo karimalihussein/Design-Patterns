@@ -1,10 +1,9 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
 
 class ComputerCS extends Computer implements ICoolingSystem
 {

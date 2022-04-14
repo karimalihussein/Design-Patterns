@@ -1,32 +1,33 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Builders;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Builders;
 
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Builder;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\keyboard;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Monitor;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Builder;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\keyboard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Monitor;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\CType;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\USB;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Mouse;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer\ComputerCS;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\UPS;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\CType;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\USB;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Mouse;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types\ComputerCS;
+
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\UPS;
 
 class ComputerCSBuilder extends Builder
 {
-    public function buildMotherBoard(): MotherBoard
+    protected function buildMotherBoard(): MotherBoard
     {
         $cpu = new CPU(2.5);
         $ram = new RAM(8);
@@ -43,30 +44,30 @@ class ComputerCSBuilder extends Builder
         $networkCard = new NetworkCard(5);
         $disk = new Disk('SSD');
         return new MotherBoard($cpu, $ram, $gpu, $sockets, $networkCard, $disk);
-        // return new MotherBoard();
+        
     }
 
-    public function buildKeyboard(): keyboard
+    protected function buildKeyboard(): keyboard
     {
         return new keyboard(true);
     }
 
-    public function buildMouse(): Mouse
+    protected function buildMouse(): Mouse
     {
         return new Mouse(false);
     }
 
-    public function buildMonitor(): Monitor
+    protected function buildMonitor(): Monitor
     {
         return new Monitor('1920 FHD');
     }
 
-    public function buildCoolingSystem(): CoolingSystem
+    protected function buildCoolingSystem(): CoolingSystem
     {
         return new CoolingSystem(5);
     }
 
-    public function buildUPS(): UPS
+    protected function buildUPS(): UPS
     {
         return new UPS(96);
     }

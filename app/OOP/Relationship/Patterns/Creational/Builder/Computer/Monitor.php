@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer;
 
 
 class Monitor

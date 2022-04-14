@@ -1,18 +1,27 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer;
 
 
-class keyboard
+class Keyboard
 {
     private bool $utfSupport;
 
-    public function __construct(bool $utfSupport){
+    /**
+     * Keyboard constructor.
+     * @param bool $utfSupport
+     */
+    public function __construct(bool $utfSupport)
+    {
         $this->utfSupport = $utfSupport;
     }
 
-    public function isUTFSupported() : bool{
+    /**
+     * @return bool
+     */
+    public function isUtfSupport(): bool
+    {
         return $this->utfSupport;
     }
 }

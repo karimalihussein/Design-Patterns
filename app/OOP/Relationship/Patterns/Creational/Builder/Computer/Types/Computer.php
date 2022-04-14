@@ -1,18 +1,18 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Keyboard;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Monitor;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Mouse;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Keyboard;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Monitor;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\Mouse;
 
 abstract class Computer
 {
  
     protected MotherBoard $motherBoard;
-    protected Keyboard $keyboard;
+    // protected Keyboard $keyboard;
     protected Mouse $mouse;
     protected Monitor $monitor;
 

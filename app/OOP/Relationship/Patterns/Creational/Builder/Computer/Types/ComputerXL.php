@@ -1,14 +1,10 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\Types;
 
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer as TypesComputer;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer\ICoolingSystem;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\Types\Computer\IPower;
-use App\OOp\Relationship\Patterns\Creational\Builder\Computer\UPS;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\CoolingSystem;
+use App\OOP\Relationship\Patterns\Creational\Builder\Computer\UPS;
 
 class ComputerXL extends Computer implements ICoolingSystem, IPower
 {
@@ -39,6 +35,15 @@ class ComputerXL extends Computer implements ICoolingSystem, IPower
   {
       $this->cs = $cs;
   }
+  public function setCs(CoolingSystem $cs): void
+  {
+      $this->cs = $cs;
+  }
+
+    public function getCs(CoolingSystem $cs): CoolingSystem
+    {
+        return  $this->cs = $cs;
+    }
   
 
   public function setUPS(UPS $ups): void

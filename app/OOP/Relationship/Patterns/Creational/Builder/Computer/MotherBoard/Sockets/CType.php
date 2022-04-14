@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\OOp\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets;
+namespace App\OOP\Relationship\Patterns\Creational\Builder\Computer\MotherBoard\Sockets;
 
 
 class CType
