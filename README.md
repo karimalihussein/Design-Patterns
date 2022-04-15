@@ -94,3 +94,9 @@ Factory Method Design Pattern
  instantiation to subclasses.
 - Also known as: Virtual Constructor
 - Example: Dialog, Content validator
+
+
+
+Prototype Design Pattern
+ - Intention: Specify the kinds of objects to create using a prototypical instance, and create new objects by copying this prototype.
+ - Example: EmployeeProtype (Real world scenario)
